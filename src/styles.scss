@@ -1,0 +1,288 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* Add styles for the Header */
+.Header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #59BEFF;
+  padding: 4px 48px;
+}
+
+/* Add styles for the Main section */
+.Main{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+/* Add styles for the SearchBar section */
+.SearchBarSection{
+  margin-top: 20px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SearchBar{
+  display: flex;
+  width: 430px;
+  height: 50px;
+  font-size: 20px;
+  border:2px #59BEFF solid;
+  border-radius: 30px;
+  padding: 0px 20px
+}
+
+.SearchBar:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.SearchButton{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border:2px #59BEFF solid;
+  background-color: white;
+  cursor: pointer;
+}
+
+.SearchButton:hover{
+  background-color: #59BEFF;
+}
+
+/* Add styles for the Post section */
+.Post{
+  width: 500px;
+  border-radius: 5px;
+  border: 1px black solid;
+  margin-top: 20px;
+}
+
+.PhotoSection{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+}
+
+.Photo{
+  max-width: 100%;
+  max-height: 500px;
+}
+
+.ButtonsSection{
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+
+.LikeSection{
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  align-items: center
+}
+
+.CommentSection {
+  border-top: 1px solid #ddd;
+  padding: 8px 0px;
+}
+
+.Comment{
+  text-align: start;
+  font-size: 14px;
+  margin: 5px 0px
+}
+
+.CommentUser{
+  padding-left: 14px;
+}
+
+.CommentText{
+  padding-left: 14px;
+}
+
+.InputSection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 472px;
+  margin: 0px 14px 8px 14px;
+}
+
+.CommentInput{
+  width: 420px;
+  height: 40px;
+  margin-right: 20px;
+  font-size: 18px;
+  border:2px #59BEFF solid;
+  border-radius: 30px;
+  padding: 0px 10px
+}
+
+.CommentInput:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.CommentButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border:2px #59BEFF solid;
+  background-color: white;
+  cursor: pointer;
+}
+
+.CommentButton:hover{
+  background-color: #59BEFF;
+}
+
+/* Add styles for the FollowButton */
+.FollowButton {
+  background-color: #59BEFF;
+  color: #000000;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  margin: 8px 0px;
+  width: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FollowButton:hover, .PurchaseButton:hover {
+  background-color: #3498db;
+}
+
+.FollowButton:focus, .PurchaseButton:focus, .DownloadButton:focus {
+  outline: none;
+}
+
+/* Add styles for the Footer */
+.Footer{
+  background-color: #59BEFF;
+  padding: 10px;
+}
+
+.FooterContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.FooterLogo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.FooterLinks a {
+  color: black;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.FooterLinks a:hover {
+  text-decoration: underline;
+}
+
+.Purchase {
+  position: relative;
+}
+
+.PurchaseButton {
+  background-color: #59BEFF;
+  color: #000000;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  margin: 8px 0px;
+  width: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PurchaseOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PurchaseArea {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.Price {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.PayButton {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.PayButton:hover, .DownloadButton:hover {
+  background-color: #1e8449;
+}
+
+.DownloadSection {
+  margin-top: 15px;
+}
+
+.DownloadButton {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  margin: 8px 0px;
+  width: 86px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
